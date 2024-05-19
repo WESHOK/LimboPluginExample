@@ -20,6 +20,7 @@ public class Handler implements LimboSessionHandler {
     //player.setGameMode(GameMode.SPECTATOR);
     try {
       player.sendImage(ImageIO.read(Objects.requireNonNull(Example.class.getResourceAsStream("/photo_2022-01-04_02-04-51.jpg"))));
+      player.sendMessage("Bebra!");
     } catch (IOException e) {
       e.printStackTrace();
     }
